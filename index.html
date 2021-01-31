@@ -1,0 +1,38 @@
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<title>ようこそ</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body bgcolor=#000000 text=#ffffff onLoad=setTimeout("location.href='exhibition.html'",5000)>
+	<script type="text/javascript">
+	<!--
+	count = 5; //カウントの初期値
+	timerID = setInterval('countup()',1000); //1秒毎にcountup()を呼び出し
+
+	function countup() {
+		if(--count<0) count=0;
+		var msg ="約" + count + "秒後に入室します。";
+		document.getElementById("Count").innerHTML = msg;
+	}
+	-->
+	</script>
+
+	<center>
+	<br><br><br><br>
+	<font size="7" face="HGP行書体">
+	ようこそ<br>
+	オバケのオンラインパーティーへ…<br>
+	</font><br><br>
+	<font size="5" face="HGP行書体">
+	<p id="Count">約5秒後に入室します。</p>
+	もし5秒たっても移動しない場合は下のボタンからお入りください。</font>
+	<br><br><br>
+	<a href="exhibition.html" class="btn">入室する</a>
+	<br>
+	</center>
+</body>
+
+</html>
