@@ -1,0 +1,44 @@
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<title>お問い合わせ</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="../icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body text=#330071>
+	<div class="back_all">
+
+	<div class="title">
+	<center><a href="exhibition.html"><img src="title.png"></a>
+	</div>
+	<center>
+	<br><br>
+
+	<div class="back_info">
+	<font size="5"><br>
+	当展示会について、ご不明な点や改善点等<br>
+	ございましたらこちらの質問フォームから<br>
+	お送りください。<br>
+	<br>
+	<form action="info.php" method="post">
+	氏名　　<input type="text" required name="name" placeholder="湯豆腐(ニックネーム可)"  class="text"/><br>
+	メール　　<input type="text" required name="mail" placeholder="○○○○@mail.com"  class="text"/><br>
+	問い合わせ種類　　<select required name="info_type">
+	<option value="">選択してください</option>
+	<option value="サイト上の改善点・エラー">サイト上の改善点・エラー</option>
+	<option value="作家とのやり取りでの不備">作家とのやり取りでの不備</option>
+	<option value="サイトや展示会についての質問">サイトや展示会についての質問</option>
+	<option value="その他">その他</option>
+	</select><br><br>
+	<textarea name="info_com" required placeholder="お問い合わせ内容：出来るだけ詳細にご記入ください。"/></textarea><br><br>
+	<input type="submit" name="info" value="送信" class="button"><br>
+	</form>
+	<br>
+	</div>
+
+	</center>
+	</div>
+</body>
+
+</html>
